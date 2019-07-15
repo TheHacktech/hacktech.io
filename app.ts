@@ -10,5 +10,5 @@ mongoose.connect(MONGO_URL, {useNewUrlParser: true});
 
 const app = express()
 	.use(router)
-	.use(express.static(path.join(__dirname, 'client')));
+	.use(express.static(path.join(__dirname, 'client/static')));
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}`));

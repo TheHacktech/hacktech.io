@@ -1,5 +1,5 @@
 # hacktech.io
-
+Made with the MEAN stack (mongodb, Expressjs, AngularJS, and Nodejs)
 
 # Set up:
 Gain SSH access to the server:
