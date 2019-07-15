@@ -36,12 +36,12 @@ Test that it works
 
 `node -e "console.log('Running Node.js ' + process.version)"`
 
-6. To run the app, 
+6. To run the app,
 
 ```
 npm install
-
-node app.js
+npm run build
+npm start
 ```
 
-go to `127.0.0.1:3000` to see. 
+go to `localhost:3000` to see.
