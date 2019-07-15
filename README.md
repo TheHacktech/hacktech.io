@@ -40,6 +40,7 @@ Test that it works
 
 ```
 npm install
+npm run build
 npm start
 ```
 
