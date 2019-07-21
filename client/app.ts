@@ -1,7 +1,5 @@
-import * as angular from "angular";
-
-angular.module("myApp", []);
-
-angular.bootstrap(document, ["myApp"], {
-    strictDi: true
-});
+import './Polyfills';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './routes';
+console.log("????");
+platformBrowserDynamic().bootstrapModule(AppModule);

@@ -48,7 +48,7 @@ function changeLogo() {
 }
 
 function buttons() {
-    document.getElementById("colorbtn").style.left = window.innerWidth - 400 + "px";
-    document.getElementById("logobtn").style.left = window.innerWidth - 500 + "px";
+    //document.getElementById("colorbtn").style.left = window.innerWidth - 400 + "px";
+    //document.getElementById("logobtn").style.left = window.innerWidth - 500 + "px";
 }
 buttons();
