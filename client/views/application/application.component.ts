@@ -1,5 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators, FormArray} from '@angular/forms';
+//TODO: add user model and post to backend api. 
 //import { User }  from '../../../server/models/user';
 
 
