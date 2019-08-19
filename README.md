@@ -39,8 +39,9 @@ Test that it works
 6. To run the app,
 
 ```
-npm install
+npm install 
 npm run build
+browserify client/app.js > client/bundle.js
 npm start
 ```
 
