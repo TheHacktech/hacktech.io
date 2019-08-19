@@ -12,7 +12,6 @@ import { ApplicationComponent } from
   './views/application/application.component';
 import { IndexComponent } from
   './index_content';
-import { ProfileEditorComponent } from './views/test/profile-editor.component';
 
 @NgModule({
   imports: [
@@ -29,7 +28,6 @@ import { ProfileEditorComponent } from './views/test/profile-editor.component';
     AppComponent,
     ApplicationComponent, 
     IndexComponent, 
-    ProfileEditorComponent
   ],
   bootstrap: [ AppComponent ]
 })
