@@ -17,15 +17,17 @@ export interface Application extends User, Document{
   race: string;
   gender: string;
   shirtSize: string;
-  needTransportation: boolean;
+  needTransportation: string;
   busFrom?: string;
   airport?: string;
   dietaryRestrictions: string;
+  dietaryRestrictionsChoice: string;
   dietaryRestrictionsDetail?: string;
   Q1: string;
   Q2: string;
   Q3: string;
   Q4: string;
+  codeOfConduct: boolean;
   applicationStatus: string;
   decidedBy: string;
   reimbursementGiven?: boolean;
@@ -87,9 +89,10 @@ let application = {
   },
 
   needTransportation: {
-    type: Boolean,
-    required: true,
-    default: false,
+    type: String,
+      enum: {
+        values: "insideCa outsideCa no".split(' ')
+      }  
   },
 
   busFrom: {
@@ -108,6 +111,16 @@ let application = {
     type: Boolean,
     required: true,
     default: false,
+  },
+
+  dietaryRestrictionsChoice: {
+    type: String,
+      enum: {
+        // TODO: Add others!
+        values: `Vegan, Vegetarian, Peanut allergy, Other, 
+                 Lactose intolerance, Gluten-free, 
+                 Halal`.split(', ')
+      }
   },
 
   dietaryRestrictionsDetail: {
@@ -132,6 +145,12 @@ let application = {
   Q4: {
     type: String,
     max: 1500,
+  },
+
+  codeOfConduct: {
+    type: Boolean,
+    required: true,
+    default: false,
   },
 
   applicationStatus: {

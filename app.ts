@@ -12,4 +12,13 @@ mongoose.connect(MONGO_URL, {useNewUrlParser: true});
 const app = express()
 	.use(router)
 	.use(express.static(path.join(__dirname, 'client')));
+
+    app.get('/', function(_req, res){
+    res.sendfile('./client/index.html');
+  });
+
+  app.get('*', function(_req, res){
+    res.sendfile('./client/index.html');
+  });
+
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}`));
