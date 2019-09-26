@@ -1,6 +1,6 @@
 import { Component, OnInit} from '@angular/core';
-import { FormBuilder, FormGroup, FormControl, Validators, FormArray} from '@angular/forms';
-//TODO: add user model and post to backend api. 
+import { FormBuilder, FormControl, Validators, FormArray} from '@angular/forms';
+//TODO: add user model and post to backend api.
 //import { User }  from '../../../server/models/user';
 
 
@@ -56,7 +56,7 @@ export class ApplicationComponent implements OnInit{
     'Halal',
     'Peanut allergy',
     'Vegetarian',
-    'Vegan', 
+    'Vegan',
     'Other'
   ];
 
@@ -78,7 +78,7 @@ export class ApplicationComponent implements OnInit{
       // find the unselected element
       let i: number = 0;
 
-      for (let control of formArray.controls) {  
+      for (let control of formArray.controls) {
         if(control.value == event.target.value) {
           // Remove the unselected element from the arrayForm
           formArray.removeAt(i);
@@ -87,7 +87,7 @@ export class ApplicationComponent implements OnInit{
         i++;
       }
     }
-  }  
+  }
 
   onSubmit() {
     let data: any = this.userForm.value;

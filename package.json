@@ -4,8 +4,8 @@
   "description": "hacktech website",
   "main": "app.js",
   "scripts": {
-    "build": "tsc \n webpack --config webpack.config.js -p",
-    "start": "node app.js",
+    "build": "tsc && webpack --config webpack.config.js -p",
+    "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
